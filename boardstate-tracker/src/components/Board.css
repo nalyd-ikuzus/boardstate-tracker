@@ -1,0 +1,63 @@
+.main_board {
+  height: auto;
+  width: 100%;
+  background: none;
+  color: #e0d4f7;
+  position: relative; /* Ensure it's in normal flow */
+}
+
+.button-holder, .token-selector {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.token-canvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  /* Remove max-height: 100% */
+  padding: 20px;
+  overflow: visible; /* Changed from scroll */
+}
+
+.token-stack {
+  position: relative;
+  width: auto;
+  height: auto;
+  /* Calculate height to accommodate stacked cards */
+  min-height: calc(var(--card-size, 150px) * 1.5);
+  padding-bottom: 80px; /* Extra space for stacked and tapped cards */
+  padding-right: 60px; /* Extra space for tapped cards extending to the right */
+}
+
+.stacked-card {
+  position: absolute;
+  transition: transform 0.4s ease, left 0.4s ease, top 0.4s ease;
+}
+
+
+.stacked-card.tapped {
+  transform: rotate(90deg) translateX(20px);
+  box-shadow: 0 0 12px #a78bfa; /* glowing violet aura when tapped */
+}
+
+
+.remove-button {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  background: none;
+  color: #ffd700; /* golden rune color */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 6px #a78bfa; /* magical glow */
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.main_search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.search_results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 60vh;
+}
+
+#searchbox {
+  background-color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Metamorphous", serif;
+}
+
+#set_searchbox {
+    background-color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Metamorphous", serif;
+    width: 30%;
+  }
+
+#result_image {
+  border-radius: 20px;
+  height: 100%;
+}

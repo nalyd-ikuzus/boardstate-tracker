@@ -1,0 +1,32 @@
+#main_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+#deck {
+  border: 2px solid #ccc;
+  padding: 10px;
+  background: #fafafa;
+
+  /*Center content within the grid*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#search {
+  border: 2px solid #ccc;
+  padding: 10px;
+  background: #fff;
+  /*Center content within the grid*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}

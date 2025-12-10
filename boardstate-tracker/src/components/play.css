@@ -1,0 +1,17 @@
+.main_play {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: auto; /* Changed from 100% */
+    height: auto; /* Allow natural growth */
+    width: 100%;
+}
+
+.deck_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}

@@ -1,0 +1,11 @@
+#div {
+  background-color: white;
+}
+
+.card-container {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
